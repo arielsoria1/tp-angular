@@ -1,15 +1,15 @@
 export class User { // 'export' para que la variable sea visible e utilizable desde fuera del archivo
 
-    id: number;
+    id: string; // al pasarse a 'mockapi' , el id debe ser tratado como string 
     name: string;
     username: string;
     email: string;
-    city: string; // 'city' especificamente, no todo el objeto 'address'
+    city: string; 
     phone: string;
     
     constructor () { // valores default de las variables User
 
-        this.id = 0;
+        this.id = '';
         this.name = '';
         this.username = '';
         this.email = '';
